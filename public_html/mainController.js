@@ -1,7 +1,18 @@
 var main = angular.module('main', []);
 
+var generateCode = function(word) {
+    var dec = Math.floor(Math.random() * 26 + 1);
+    var size = word.length;
+    var end = "";
+    for (var i = 0; i < size; ++i) {
+        end[i]  = String.fromCharCode(word.charCodeAt(i) + dec);
+    }
+    return end;
+}
+
 main.controller("mainController", function($scope) {
     $scope.value = Math.random();
+    $scope.secret = generateCode("YdKozjtoTn");
 });
 
 main.component("menu", {

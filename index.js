@@ -1,5 +1,12 @@
 var express = require("express");
 var app = express();
+var http = require('http');
+
+var server = http.createServer(app);
+
+// Ecoute sur les websockets
+var io = require('socket.io').listen(http);
+io.set('origins', '*:*');
 
 
 app.use(express.static('public'));
@@ -12,31 +19,12 @@ app.get('/secret', function(req, res) {
     res.sendFile(__dirname + '/public_html/secret.html');
 })
 
-app.get('/*', function(req, res) {
+/*app.get('/*', function(req, res) {
     res.sendFile(__dirname + '/public_html/error.html');
-})
+})*/
 
 app.listen(8080);
 console.log("now listening on port 8080")
-
-
-// Chargement des modules
-var express = require('express');
-var app = express();
-var server = app.listen(8180, function() {
-    console.log("C'est parti ! En attente de connexion sur le port 8080...");
-});
-
-// Ecoute sur les websockets
-var io = require('socket.io').listen(server);
-io.set('origins', '*:*');
-
-// Configuration d'express pour utiliser le répertoire "public"
-app.use(express.static('public'));
-// set up to
-app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/public/chat.html');
-});
 
 
 /*** Gestion des clients et des connexions ***/
