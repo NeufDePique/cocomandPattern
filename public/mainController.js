@@ -5,6 +5,6 @@ main.controller("mainController", function($scope) {
 });
 
 main.component("menu", {
-    template: "this is the menu",
+    template: "<a href=\"index.html\">Accueil</a> <a href=\"chat.html\">Chatter avec d'autres étudiants</a>",
     controller: function MenuController() {}
 });
