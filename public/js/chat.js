@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(_e) {
-var co = document.getElementById("btnConnecter");
+
+var message = document.getElementById("message");
+message.style.display = "none";
+
+var co = document.getElementById("co");
 co.addEventListener("click", function(e){
-    var pseudo = document.getElementById("pseudo");
-    if (pseudo.value.length == 0){
-        return;
-    }
-    chat(pseudo.value);
+    var con = document.getElementById("pseudo");
+    con.style.display = "none";
+    var pseudo = document.getElementById("pseudo_input").value;
+    message.style.display = "block";
+    chat(pseudo);
+
 });
 
 function chat(pseudo){
-    document.getElementById("radio1").checked = false;
-    document.getElementById("radio2").checked = true;
 
     //QUITTER
     var quit = document.getElementById("btnQuitter");
@@ -31,16 +34,6 @@ function chat(pseudo){
         var list_client = document.querySelector("aside");
         var html = "<p>" + login + "</p>";
         list_client.innerHTML += html;
-    });
-
-    //RECUPERATION DE LA LISTE DES UTILISATEURS CONNECTES
-    socket.on("liste", function(login){
-        var html = "";
-        login.forEach(function(elem){
-            html += "<p>" + elem + "</p>";
-        });
-        var list_client = document.querySelector("aside");
-        list_client.innerHTML = html;
     });
 
     //RECUPERATION DES MSG
@@ -87,38 +80,12 @@ function chat(pseudo){
         var message = mess.value;
         if (message.length != 0){
 
-            var reg = new RegExp(':lol:');
-            message = message.replace(reg, '<span class="emoji rire"></span>');
-
-            var reg2 = new RegExp(':zzz:');
-            message = message.replace(reg2, '<span class="emoji zzz"></span>');
-
-            var reg3 = new RegExp(':love:');
-            message = message.replace(reg3, '<span class="emoji love"></span>');
-
-            var reg4 = new RegExp(':holala:');
-            message = message.replace(reg4, '<span class="emoji holala"></span>');
-
-            var reg5 = new RegExp(':grrr:');
-            message = message.replace(reg5, '<span class="emoji grrr"></span>');
-
-            var reg6 = new RegExp(':triste:');
-            message = message.replace(reg6, '<span class="emoji triste"></span>');
-
-            var reg7 = new RegExp(':sourire:');
-            message = message.replace(reg7, '<span class="emoji sourire"></span>');
-
-            var reg8 = new RegExp(':banane:');
-            message = message.replace(reg8, '<span class="emoji banane"></span>');
-
-            var reg9 = new RegExp(':malade:');
-            message = message.replace(reg9, '<span class="emoji malade"></span>');
-
             if (message.charAt(0) == '@'){
                 var name = "";
                 for (var i = 1; message.charAt(i) !== ' '; ++i){
                     name += message.charAt(i);
                 }
+                console.log("message : " + message);
                 socket.emit("message", {from: pseudo, to: name, text: message, date: Date.now()});
             } else {
                 socket.emit("message", {from: pseudo, to: null, text: message, date: Date.now()});

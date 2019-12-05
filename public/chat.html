@@ -7,25 +7,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="mainController.js"></script>
-    <script type="text/javascript" src="js/chat.js"></script>
+    <script type="text/javascript" src="./js/chat.js"></script>
 </head>
 
 <body>
-    <input type="radio" name="btnScreen" id="radio1" checked>
-    <div id="logScreen">
-        <div id="connexion">
-            <p>Choisissez votre pseudo : <br>
-            <input type="text" id="pseudo" placeholder="Tapez ici votre pseudo" size="30">
-            <input type="button" value="Se connecter" id="btnConnecter">
-            </p>
-        </div>
-    </div>
-    <input type="radio" name="btnScreen" id="radio2">
     <div id="content">
-        <h2>Chat entre pauvre<span id="login"></span></h2>
-        <h3>Clients connectés</h3>
-        <aside>
-        </aside>
+        <h2>Chat entre pauvre - <span id="login"></span></h2>
+        <div id="pseudo">
+            <input type="text" id="pseudo_input">
+            <input type="button" value="Se connecter" id="co">
+        </div>
+        <div id="message">
         <main>
         </main>
         <footer>
@@ -35,12 +27,9 @@
             <input type="button" value="Quitter" id="btnQuitter">
         </footer>
         <div id="bcImage" style="display: none;">
-            <header>
-                <input type="text" id="recherche" placeholder="Tapez ici le texte de votre recherche">
-                <input type="button" value="Recherche" id="btnRechercher">
-            </header>
             <div id="bcResults"></div>
             <footer><input type="button" value="Fermer" id="btnFermer"></footer>
+        </div>
         </div>
     </div>
     <p>
