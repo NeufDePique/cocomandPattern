@@ -25,6 +25,7 @@ var server = app.listen(8180, function() {
 
 // Ecoute sur les websockets
 var io = require('socket.io').listen(server);
+io.set('origins', '*:*');
 
 // Configuration d'express pour utiliser le répertoire "public"
 app.use(express.static('public'));

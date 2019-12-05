@@ -21,20 +21,13 @@ function chat(pseudo){
         window.location.reload();
     });
 
-    var socket = io.connect('http://localhost:8080');
+    var socket = io.connect();
     //ENVOIE DU NOM DE L'UTILISATEUR QUI VIENS DE CE CONNECTER
     socket.emit("login", pseudo);
 
     //MAJ DU TITRE
     var titre = document.getElementById("login");
     titre.innerHTML = pseudo;
-
-    //
-    socket.on("bienvenue", function(login){
-        var list_client = document.querySelector("aside");
-        var html = "<p>" + login + "</p>";
-        list_client.innerHTML += html;
-    });
 
     //RECUPERATION DES MSG
     socket.on("message", function(msg){
