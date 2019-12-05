@@ -5,15 +5,15 @@ var app = express();
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public_html/index.html');
 });
 
 app.get('/secret', function(req, res) {
-    res.sendFile(__dirname + '/public/secret.html');
+    res.sendFile(__dirname + '/public_html/secret.html');
 })
 
 app.get('/*', function(req, res) {
-    res.sendFile(__dirname + '/public/error.html');
+    res.sendFile(__dirname + '/public_html/error.html');
 })
 
 app.listen(8080);
