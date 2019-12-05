@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="main">
 	<head>
 		<title>La nuit de l'info</title>
 		<meta charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script type="text/javascript" src="mainController.js"></script>
 	</head>
-	<body>
+	<body ng-controller="mainController">
 		<img src="http://www.c-s.fr/photo/art/grande/10473979-17184151.jpg?v=14775721188" alt="logo-nuit"/>
 		<p>
-		    CocomandPattern
+		    CocomandPattern {{value}}
 		</p>
 		<img src="../images/MineCloud.svg">
 		Tu veux économiser des sous ? Ce site est fait pour toi !!!!
