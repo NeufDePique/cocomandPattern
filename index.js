@@ -1,12 +1,5 @@
 var express = require("express");
 var app = express();
-var http = require('http');
-
-var server = http.createServer(app);
-
-// Ecoute sur les websockets
-var io = require('socket.io').listen(http);
-io.set('origins', '*:*');
 
 
 app.use(express.static('public'));
@@ -19,24 +12,18 @@ app.get('/secret', function(req, res) {
     res.sendFile(__dirname + '/public_html/secret.html');
 })
 
-<<<<<<< HEAD
-/*app.get('/*', function(req, res) {
-=======
 app.get('/options', function(req, res) {
     res.sendFile(__dirname + '/public_html/options.html');
 })
 
 app.get('/*', function(req, res) {
->>>>>>> c60e11462e0c55873210f3dd2568dc365ddc6472
     res.sendFile(__dirname + '/public_html/error.html');
-})*/
+})
 
 var server = app.listen(8080);
 console.log("now listening on port 8080")
 
 
-<<<<<<< HEAD
-=======
 
 // Ecoute sur les websockets
 var io = require('socket.io').listen(server);
@@ -50,7 +37,6 @@ app.get('/', function(req, res) {
 });
 
 
->>>>>>> c60e11462e0c55873210f3dd2568dc365ddc6472
 /*** Gestion des clients et des connexions ***/
 var clients = {};       // id -> socket
 
