@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="main">
 	<head>
 		<title>La nuit de l'info</title>
 		<meta charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script type="text/javascript" src="mainController.js"></script>
 	</head>
-	<body>
+	<body ng-controller="mainController">
 		<img src="http://www.c-s.fr/photo/art/grande/10473979-17184151.jpg?v=14775721188" alt="logo-nuit"/>
 		<p>
-		    CocomandPattern
+		    CocomandPattern {{value}}
 		</p>
+
+		Tu veux économiser des sous ? Ce site est fait pour toi !!!!
+
 		<p>
 		Voici la liste des sponsors, elle doit toujours être visible avec leur logo (en bas de page ça convient tout à fait) :<br />
 		<a href="http://disc.univ-fcomte.fr/"><img src="http://sciences.univ-fcomte.fr/download/ufr-st/image/laboratoires/femto-st.jpg" alt="DISC" style="width: 200px"/></a>
