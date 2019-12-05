@@ -11,5 +11,8 @@
     "url": "https://nuit-info.ofni.asso.fr/git/cocomandpattern.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^8.3.20"
+  }
 }
