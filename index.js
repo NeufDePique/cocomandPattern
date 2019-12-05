@@ -8,5 +8,9 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+app.get('/*', function(req, res) {
+    res.sendFile(__dirname + '/public/error.html');
+})
+
 app.listen(8080);
 console.log("now listening on port 8080")
