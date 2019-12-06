@@ -5,17 +5,18 @@ var generateCode = function(word) {
     var size = word.length;
     var end = "";
     for (var i = 0; i < size; ++i) {
-        end[i]  = String.fromCharCode(word.charCodeAt(i) + dec);
+        end += String.fromCharCode(((word.charCodeAt(i) + dec) % 26) + "a".charCodeAt(0));
+        console.log(end);
     }
     return end;
 }
 
 main.controller("mainController", function($scope) {
     $scope.value = Math.random();
-    $scope.secret = generateCode("YdKozjtoTn");
+    $scope.secret = generateCode("ydkozjtotn");
 });
 
-/* main.component("menu", {
+main.component("menu", {
     template: "<a href=\"index.html\">Accueil</a> <a href=\"chat.html\">Chatter avec d'autres étudiants</a>",
     controller: function MenuController() {}
 });
@@ -29,4 +30,4 @@ main.component("footer", {
     "<a href=\"https://vixtechnology.com/\"><img src=\"https://upload.wikimedia.org/wikipedia/en/4/4e/Vix_Technology_logo.png\" alt=\"Vix Technology\">"+
     "<a href=\"http://fug-game.com/\"><figure><img src=\"http://fug-game.com/wp-content/uploads/2018/09/logo-fug-game-blason.png\" alt=\"fug-games\" /><figcaption>FUG GAME</figcaption></figure></a>",
     controller: function MenuController() {} 
-}); */
+});
