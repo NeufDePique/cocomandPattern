@@ -17,7 +17,7 @@ main.controller("mainController", function($scope) {
 });
 
 main.component("menu", {
-    template: "<a href=\"index.html\">Accueil</a> <a href=\"chat.html\">Chatter avec d'autres étudiants</a>",
+    template: "<a href=\"index.html\">Accueil</a> <a href=\"chat.html\">Chatter avec d'autres étudiants</a><a href=\"conseils.html\">Conseils</a>",
     controller: function MenuController() {}
 });
 
@@ -42,5 +42,5 @@ main.component("foot", {
 				'</div>' +
 			'</div>' +
 		'</footer>',
-    controller: function MenuController() {} 
+    controller: function MenuController() {}
 });
