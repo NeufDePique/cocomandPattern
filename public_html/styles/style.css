@@ -391,7 +391,16 @@ input[type=radio]:checked + div {
     position: absolute;
     top: 0;
     right: 0;
+    background-position: top;
 }
+#jeancloud{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 #imageJean{
     width: 13%;
