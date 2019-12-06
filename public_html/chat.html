@@ -1,14 +1,38 @@
 <!doctype html>
 <html ng-app="main">
 
-<head>
-    <title>La nuit de l'info</title>
-    <meta charset="utf-8"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="mainController.js"></script>
-    <script type="text/javascript" src="./js/chat.js"></script>
-</head>
+    <head>
+        <title>La nuit de l'info</title>
+        <meta charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    
+        <script type="text/javascript" src="mainController.js"></script>
+        <script type="text/javascript" src="js/manu.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="styles/reset.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          <link rel="stylesheet" href="styles/hamburger.min.css">
+          <link rel="stylesheet" href="styles/white-space.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="js/jquery.js"></script>
+          <script src="js/main.js"></script>
+    
+        <link rel="stylesheet" href="./styles/manu.css">
+    </head>
+    
+    <body ng-controller="mainController">
+      <header class="header d-flex align-items-center justify-content-center">
+            <div class="header--title d-block">
+                <h1 class="header--h1">La nuit de<br><span class="strong">l'info</span></h1>
+                <div class="ws-20"></div>
+                <h2 class="header--h2">By CocomandPattern</h2>
+            </div>
+            <div class="project__scroll">
+                <div class="project__scrollLine"></div>
+                <div class="project__scrollText"></div>
+            </div>
+        <menu></menu>
+      </header>
 
 <body>
     <div id="content">
@@ -32,7 +56,8 @@
         </div>
         </div>
     </div>
-    <footer></footer>
+    <foot>
+    </foot>
 </body>
 
 </html>
