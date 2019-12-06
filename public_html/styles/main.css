@@ -38,3 +38,63 @@ body{
 
 background-image: url(../images/ufr.jpg)
 }
+
+.square{
+	width:75px;
+	height: 75px;
+	position: relative;
+	float: left;
+	margin-left: 10px;
+
+}
+.sq_red{
+	background-color: red;
+	border : solid 5px #9C1313;
+}
+.sq_red .motif{
+
+	display : none;
+	height : 0;
+	width : 0;
+	border-top : 65px solid red;
+	border-right : 65px solid black;
+}
+.sq_black{
+	background-color: #6B6B6B;
+	border : solid 5px #252525;
+}
+.sq_black .motif{
+
+	display : none;
+	height : 0;
+	width : 0;
+	border-top : 65px solid white;
+	border-right : 32.5px solid black;
+	border-left : 32.5px solid black;
+}
+.sq_green{
+
+	background-color: green;
+	border : solid 5px #206F13;
+}
+.sq_green .motif{
+
+	display : none;
+	height : 0;
+	width : 0;
+	border-bottom : 65px solid green;
+	border-right : 65px solid black;
+}
+.sq_blue{
+	background-color: blue;
+	border : solid 5px #0A0F70;
+}
+.sq_blue .motif{
+
+	display : none;
+	height : 0;
+	width : 0;
+	border-bottom : 65px solid blue;
+	border-left : 32.5px solid black;
+	border-right : 32.5px solid black;
+}
