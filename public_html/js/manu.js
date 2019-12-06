@@ -1,15 +1,15 @@
-function getHtml(nb){
-    if (nb == 1){
+function gilletJaune(brigitte){
+    if (brigitte == 1){
         return "<h2>Les citations perlinpinpin de Manu !</h2><table id=\"table\"><tr><td><img src=\"/images/macron.png\" alt=\"manu\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
-    } else if (nb == 2){
+    } else if (brigitte == 2){
         return "<h2>Les citations flamby de H !</h2><table id=\"table\"><tr><td><img src=\"/images/hollande.png\" alt=\"hollande\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
-    } else if (nb == 3){
+    } else if (brigitte == 3){
         return "<h2>Les citations karcher de Sarko !</h2><table id=\"table\"><tr><td><img src=\"/images/sarko.png\" alt=\"sarko\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
     }
 }
 
-function getCitations(nb){
-    if (nb == 1){
+function discoursNonPrepare(pompidou){
+    if (pompidou == 1){
         return ['Il suffit de traverser la rue pour trouver un travail !',
                 'Si j\'étais chômeur, je n\'attendrais pas tout de l\'autre, j\'essaierais de me battre d\'abord',
                 'L\'espérance c\'est le premier risque, c\'est le risque des risques.',
@@ -21,7 +21,7 @@ function getCitations(nb){
                 'Je suis gilet jaune',
                 'J\'ai toujours assumé la dimension de verticalité, de transcendance, mais en même temps elle doit s\'ancrer dans de l\'immanence complète, de la matérialité'
             ];
-    } else if (nb == 3){
+    } else if (pompidou == 3){
         return ['Rendre autonome les universités, c\'est faire confiance au monde enseignant',
         'Vous voulez moins de riche, je veux moins de pauvre !',
         'Casse toi pauvre con !',
@@ -30,7 +30,7 @@ function getCitations(nb){
         'Mourir ce n\'est pas facile !',
         'La croissance, j\'irais la chercher avec les dents'
     ];
-} else if (nb == 2){
+} else if (pompidou == 2){
         return  ['Oui je n\'aime pas les riches. Je n\'aime pas les riches j\'en conviens',
             'Le patriotisme économique n\'est que la face cocardière du clientélisme',
             'Gouverner c\'est pleuvoir',
@@ -39,45 +39,45 @@ function getCitations(nb){
     }
 }
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+function getNombreManifestantSelonLaPolice(styloRouge) {
+    return Math.floor(Math.random() * Math.floor(styloRouge));
 };
 
 document.addEventListener("DOMContentLoaded", function(_e) {
 
-    var voir = document.getElementById('voir');
-    voir.style.display = "none";
+    var elysee = document.getElementById('voir');
+    elysee.style.display = "none";
 
-    var c = document.getElementById('voirConseil');
-    c.addEventListener("click", function(e){
-        var m = document.getElementById('manuR');
-        var h = document.getElementById('hollR');
-        var s = document.getElementById('sarkoR');
+    var lois = document.getElementById('voirConseil');
+    lois.addEventListener("click", function(e){
+        var mitterand = document.getElementById('manuR');
+        var giscard = document.getElementById('hollR');
+        var deGaulle = document.getElementById('sarkoR');
 
-        var htmlAdd;
-        var cit;
+        var republique;
+        var cahierDeDoleance;
 
-        if (m.checked){
-            htmlAdd = getHtml(1);
-            cit = getCitations(1);
-        } else if (h.checked){
-            htmlAdd = getHtml(2);
-            cit = getCitations(2);
-        } else if (s.checked){
-            htmlAdd = getHtml(3);
-            cit = getCitations(3);
+        if (mitterand.checked){
+            republique = gilletJaune(1);
+            cahierDeDoleance = discoursNonPrepare(1);
+        } else if (giscard.checked){
+            republique = gilletJaune(2);
+            cahierDeDoleance = discoursNonPrepare(2);
+        } else if (deGaulle.checked){
+            republique = gilletJaune(3);
+            cahierDeDoleance = discoursNonPrepare(3);
         }
 
-        voir.innerHTML = htmlAdd;
-        voir.style.display = "block";
+        elysee.innerHTML = republique;
+        elysee.style.display = "block";
 
-        var imgPres = document.getElementById('imgPres');
-        imgPres.addEventListener("click", function(e){
+        var mandat = document.getElementById('imgPres');
+        mandat.addEventListener("click", function(e){
 
-        var size = cit.length;
+        var quinquenat = cahierDeDoleance.length;
 
-        var c = document.getElementById('theConseil');
-            c.innerHTML = "<p>" + cit[getRandomInt(size)] + "</p>";
+        var compatriotes = document.getElementById('theConseil');
+            compatriotes.innerHTML = "<p>" + cahierDeDoleance[getNombreManifestantSelonLaPolice(quinquenat)] + "</p>";
         });
     });
 });
