@@ -8,16 +8,31 @@
 
     <script type="text/javascript" src="mainController.js"></script>
     <script type="text/javascript" src="js/manu.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="styles/reset.css">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	  <link rel="stylesheet" href="styles/hamburger.min.css">
+	  <link rel="stylesheet" href="styles/white-space.min.css">
+  	<link rel="stylesheet" href="styles/style.css">
 
     <link rel="stylesheet" href="./styles/manu.css">
 </head>
 
 <body ng-controller="mainController">
-
-    <img src="http://www.c-s.fr/photo/art/grande/10473979-17184151.jpg?v=14775721188" alt="logo-nuit"/>
+  <header class="header d-flex align-items-center justify-content-center">
+		<div class="header--title d-block">
+			<h1 class="header--h1">La nuit de<br><span class="strong">l'info</span></h1>
+			<div class="ws-20"></div>
+			<h2 class="header--h2">By CocomandPattern</h2>
+		</div>
+		<div class="project__scroll">
+			<div class="project__scrollLine"></div>
+			<div class="project__scrollText"></div>
+		</div>
     <menu></menu>
-<div id="divmain">
-    <div>
+  </header>
+<p id="divmain">
+    <p>
         <ul>
             <li>Vérifier toutes les bourses possibles</li>
             <li>Essayer de trouver des petits boulots</li>
@@ -25,34 +40,34 @@
             <li>Venir à la fac en vélo</li>
         </ul>
 
-    </div>
+      </p>Z
 
     <p>Surtout, ne désesperrez pas ! Et pour ce détendre, nous vous proposons quelques citations cocasses de nos très chèr présidents</p>
 
     <h2>Le conseil du Présiroi de France</h2>
 
-    <div>
+    <p>
   <input type="radio" id="manuR" name="choix" value="manu"
          checked>
   <label for="manu">Perlinpinpin</label>
-</div>
+    </p>
 
-<div>
+<p>
   <input type="radio" id="hollR" name="choix" value="holl">
   <label for="holl">Flamby</label>
-</div>
+</p>
 
-<div>
+<p>
   <input type="radio" id="sarkoR" name="choix" value="sarko">
   <label for="sarko">Karcher</label>
-</div>
+</p>
 
 <input type="Button" name="Voir des conseils" value="Voir les conseils" id="voirConseil">
 
-<div id="voir">
+<p id="voir">
 
-</div>
-</div>
+</p>
+</p>
 
 <foot>
 </foot>
