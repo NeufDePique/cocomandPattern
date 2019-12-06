@@ -27,7 +27,8 @@ function getCitations(nb){
         'Casse toi pauvre con !',
         'Je pense que ce qui est le plus important dans chaque existance c\'est l\'espérence et ce quelquesoit son âge et son parcours',
         'On ne diras jamais assez tous le mal que les 35 heures ont fait à notre pays',
-        'Mourir ce n\'est pas facile !'
+        'Mourir ce n\'est pas facile !',
+        'La croissance, j\'irais la chercher avec les dents'
     ];
 } else if (nb == 2){
         return  ['Oui je n\'aime pas les riches. Je n\'aime pas les riches j\'en conviens',
