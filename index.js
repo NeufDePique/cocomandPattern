@@ -16,5 +16,5 @@ app.get('/*', function(req, res) {
     res.sendFile(__dirname + '/public_html/error.html');
 })
 
-app.listen(8080);
+app.listen(80);
 console.log("now listening on port 8080")
