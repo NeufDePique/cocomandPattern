@@ -23,7 +23,10 @@ main.component("menu", {
 
 
 main.component("foot", {
-    template:  '<footer class="footer">' +
+    template:  '<footer class="footer"><div class="container"> <div class="row align-items-center">' +
+					'<div class="col">' +
+						'<a class="footer--link" href="http://disc.univ-fcomte.fr/"><img class="footer--img" src="http://sciences.univ-fcomte.fr/download/ufr-st/image/laboratoires/femto-st.jpg" alt="DISC"/></a>' +
+					'</div>' +
 					'<div class="col">' +
 						'<a class="footer--link" href="http://www.univ-fcomte.fr/"><img class="footer--img" src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e2/Universit%C3%A9_de_Franche-Comt%C3%A9_%28logo%29.svg/619px-Universit%C3%A9_de_Franche-Comt%C3%A9_%28logo%29.svg.png" alt="UFC" /></a>' +
 					'</div>' +
@@ -40,7 +43,7 @@ main.component("foot", {
 						'<a class="footer--link" href="http://fug-game.com/"><img class="footer--img" src="http://fug-game.com/wp-content/uploads/2018/09/logo-fug-game-blason.png" alt="fug-games" /></a>' +
 					'</div>' +
 				'</div>' +
-			'</div>' +
+			'</div></div></div>' +
 		'</footer>',
     controller: function MenuController() {}
 });
