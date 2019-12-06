@@ -26,7 +26,7 @@ function discoursNonPrepare(pompidou){
         'Vous voulez moins de riche, je veux moins de pauvre !',
         'Casse toi pauvre con !',
         'Je pense que ce qui est le plus important dans chaque existance c\'est l\'espérence et ce quelquesoit son âge et son parcours',
-        'On ne diras jamais assez tous le mal que les 35 heures ont fait à notre pays',
+        'On ne dira jamais assez tout le mal que les 35 heures ont fait à notre pays',
         'Mourir ce n\'est pas facile !',
         'La croissance, j\'irais la chercher avec les dents'
     ];
