@@ -6,7 +6,7 @@
 		<meta charset="utf-8"/>
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./styles/reset.css">
-		<link rel="stylesheet" href="./styles/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="./styles/hamburger.min.css">
 		<link rel="stylesheet" href="./styles/white-space.min.css">
 		<link rel="stylesheet" href="./styles/style.css">
@@ -16,6 +16,36 @@
 		<script type="text/javascript" src="./mainController.js"></script>
 	</head>
 	<body ng-controller="mainController">
+		<header class="header d-flex align-items-center justify-content-center">
+			<div class="header--title d-block">
+				<h1 class="header--h1">La nuit de<br><span class="strong">l'info</span></h1>
+				<div class="ws-20"></div>
+				<h2 class="header--h2">By CocomandPattern</h2>
+			</div>
+			<div class="project__scroll">
+				<div class="project__scrollLine"></div>
+				<div class="project__scrollText"></div>
+			</div>
+			<nav class="nav">
+				<button class="nav--hamburger hamburger hamburger--elastic" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<div class="nav--full-screen d-flex align-items-center justify-content-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<ul class="nav--list">
+									<li class="nav--list-item"><a class="nav--link" href="./index.html">Accueil</a></li>
+									<li class="nav--list-item"><a class="nav--link" href="./chat.html">Chatter avec d'autres étudiants</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
 		<img src="http://www.c-s.fr/photo/art/grande/10473979-17184151.jpg?v=14775721188" alt="logo-nuit"/>
         <menu></menu>
 		<p>
@@ -25,8 +55,9 @@
 		<img id="imageJean" src="./images/JeanCloud.svg">
 		Tu veux économiser des sous ? Ce site est fait pour toi !!!!
 
-		<footer>
-		</footer>
-		
+		<p>
+	Voici la liste des sponsors, elle doit toujours être visible avec leur logo (en bas de page ça convient tout à fait) :<br />
+	
+		<foot> </foot>
 	</body>
 </html>
