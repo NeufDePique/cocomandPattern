@@ -5,14 +5,15 @@ var generateCode = function(word) {
     var size = word.length;
     var end = "";
     for (var i = 0; i < size; ++i) {
-        end[i]  = String.fromCharCode(word.charCodeAt(i) + dec);
+        end += String.fromCharCode(((word.charCodeAt(i) + dec) % 26) + "a".charCodeAt(0));
+        console.log(end);
     }
     return end;
 }
 
 main.controller("mainController", function($scope) {
     $scope.value = Math.random();
-    $scope.secret = generateCode("YdKozjtoTn");
+    $scope.secret = generateCode("ydkozjtotn");
 });
 
 main.component("menu", {

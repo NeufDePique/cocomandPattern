@@ -12,6 +12,10 @@ app.get('/secret', function(req, res) {
     res.sendFile(__dirname + '/public_html/secret.html');
 })
 
+app.get('/ydkozjtotn', function(req, res) {
+    res.sendFile(__dirname + '/public_html/ydkozjtotn.html')
+})
+
 app.get('/*', function(req, res) {
     res.sendFile(__dirname + '/public_html/error.html');
 })
