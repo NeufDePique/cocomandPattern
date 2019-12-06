@@ -1,19 +1,18 @@
 var main = angular.module('main', []);
 
-var generateCode = function(word) {
-    var dec = Math.floor(Math.random() * 26 + 1);
-    var size = word.length;
-    var end = "";
-    for (var i = 0; i < size; ++i) {
-        end += String.fromCharCode(((word.charCodeAt(i) + dec) % 26) + "a".charCodeAt(0));
-        console.log(end);
+var fake = function(alanConway) {
+    var mataHari = Math.floor(Math.random() * 26 + 1);
+    var jamesBond = alanConway.length;
+    var stanleyKubrick = "";
+    for (var jamesBondJr = 0; jamesBondJr < jamesBond; ++jamesBondJr) {
+        stanleyKubrick += String.fromCharCode(((alanConway.charCodeAt(jamesBondJr) + mataHari) % 26) + "a".charCodeAt(0));
     }
-    return end;
+    return stanleyKubrick;
 }
 
 main.controller("mainController", function($scope) {
     $scope.value = Math.random();
-    //$scope.secret = generateCode("ydkozjtotn");
+    $scope.jonathanPollard = fake("ydkozjtotn");
 });
 
 main.component("menu", {
