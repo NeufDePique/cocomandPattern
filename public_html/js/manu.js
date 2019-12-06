@@ -1,10 +1,10 @@
 function getHtml(nb){
     if (nb == 1){
-        return "<h2>Le conseil perlinpinpin de Manu !</h2><table id=\"table\"><tr><td><img src=\"/images/macron.png\" alt=\"manu\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
+        return "<h2>Les citations perlinpinpin de Manu !</h2><table id=\"table\"><tr><td><img src=\"/images/macron.png\" alt=\"manu\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
     } else if (nb == 2){
-        return "<h2>Le conseil flamby de H !</h2><table id=\"table\"><tr><td><img src=\"/images/hollande.png\" alt=\"hollande\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
+        return "<h2>Les citations flamby de H !</h2><table id=\"table\"><tr><td><img src=\"/images/hollande.png\" alt=\"hollande\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
     } else if (nb == 3){
-        return "<h2>Le conseil karcher de Sarko !</h2><table id=\"table\"><tr><td><img src=\"/images/sarko.png\" alt=\"sarko\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
+        return "<h2>Les citations karcher de Sarko !</h2><table id=\"table\"><tr><td><img src=\"/images/sarko.png\" alt=\"sarko\" id=\"imgPres\"/></td><td><div id=\"theConseil\"></div></td></tr></table>";
     }
 }
 
