@@ -25,7 +25,9 @@ function getCitations(nb){
         return ['Rendre autonome les universités, c\'est faire confiance au monde enseignant',
         'Vous voulez moins de riche, je veux moins de pauvre !',
         'Casse toi pauvre con !',
-        'Je pense que ce qui est le plus important dans chaque existance c\'est l\'espérence et ce quelquesoit son âge et son parcours'
+        'Je pense que ce qui est le plus important dans chaque existance c\'est l\'espérence et ce quelquesoit son âge et son parcours',
+        'On ne diras jamais assez tous le mal que les 35 heures ont fait à notre pays',
+        'Mourir ce n\'est pas facile !'
     ];
 } else if (nb == 2){
         return  ['Oui je n\'aime pas les riches. Je n\'aime pas les riches j\'en conviens',
