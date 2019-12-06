@@ -1,4 +1,32 @@
-#manu{
+#divmain{
+    border: solid 2px green;
+    border-radius: 8px;
+    background-color: #e8e5dc;
+}
+
+#table{
     border: solid 2px red;
     border-radius: 4px;
+    height: 200px;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    witdh: 25%;
+}
+
+#imgPres{
+    float: left;
+}
+
+#theConseil{
+    float: right;
+    font-size: 20px;
+}
+
+#voirConseil{
+    margin-bottom: 10px;
 }

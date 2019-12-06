@@ -8,14 +8,15 @@
 
     <script type="text/javascript" src="mainController.js"></script>
     <script type="text/javascript" src="js/manu.js"></script>
-    
+
     <link rel="stylesheet" href="./styles/manu.css">
 </head>
 
 <body ng-controller="mainController">
+
     <img src="http://www.c-s.fr/photo/art/grande/10473979-17184151.jpg?v=14775721188" alt="logo-nuit"/>
     <menu></menu>
-
+<div id="divmain">
     <div>
         <ul>
             <li>Vérifier toutes les bourses possibles</li>
@@ -26,13 +27,32 @@
 
     </div>
 
-    <div id="manu">
-        <h2>Le conseil perlinpinpin de Manu !</h2>
-        <img src="" alt="manu" id="imgManu"/>
-        <div id="theConseil">
-        </div>
-    </div>
+    <p>Surtout, ne désesperrez pas ! Et pour ce détendre, nous vous proposons quelques citations cocasses de nos très chèr présidents</p>
 
+    <h2>Le conseil du Présiroi de France</h2>
+
+    <div>
+  <input type="radio" id="manuR" name="choix" value="manu"
+         checked>
+  <label for="manu">Perlinpinpin</label>
+</div>
+
+<div>
+  <input type="radio" id="hollR" name="choix" value="holl">
+  <label for="holl">Flamby</label>
+</div>
+
+<div>
+  <input type="radio" id="sarkoR" name="choix" value="sarko">
+  <label for="sarko">Karcher</label>
+</div>
+
+<input type="Button" name="Voir des conseils" value="Voir les conseils" id="voirConseil">
+
+<div id="voir">
+
+</div>
+</div>
     <footer></footer>
 </body>
 
