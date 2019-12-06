@@ -14,6 +14,9 @@ app.get('/secret', function(req, res) {
 
 app.get('/ydkozjtotn', function(req, res) {
     res.sendFile(__dirname + '/public_html/ydkozjtotn.html')
+
+app.get('/conseils', function(req, res){
+    res.sendFile(__dirname + '/public_html/conseils.html');
 })
 
 app.get('/*', function(req, res) {
