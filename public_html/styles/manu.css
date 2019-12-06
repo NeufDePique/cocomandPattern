@@ -2,6 +2,15 @@ body{
     font-family:verdana, sans-serif;
 }
 
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(22,15,47);
+    background: linear-gradient(0deg, rgba(22,15,47,1) 0%, rgba(48,22,69,1) 47%, rgba(97,34,111,1) 100%);
+    background-attachment: fixed;
+}
+
 
 #divmain{
     border: solid 2px green;
