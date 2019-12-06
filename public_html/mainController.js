@@ -17,7 +17,25 @@ main.controller("mainController", function($scope) {
 });
 
 main.component("menu", {
-    template: "<a href=\"index.html\">Accueil</a> <a href=\"chat.html\">Chatter avec d'autres étudiants</a><a href=\"conseils.html\">Conseils</a>",
+    template: '<nav class="nav">' +
+			'<button class="nav--hamburger hamburger hamburger--elastic" type="button">' +
+				'<span class="hamburger-box">' +
+					'<span class="hamburger-inner"></span>' +
+				'</span>' +
+			'</button>' +
+			'<div class="nav--full-screen d-flex align-items-center justify-content-center">' +
+				'<div class="container">' +
+					'<div class="row">' +
+						'<div class="col-12">' +
+							'<ul class="nav--list">' +
+								'<li class="nav--list-item"><a class="nav--link" href="index.html">Accueil</a></li>' +
+								'<li class="nav--list-item"><a class="nav--link" href="chat.html">Chatter avec d\'autres étudiants</a>' + '</li>' +
+							'</ul>' +	
+						'</div>' +
+					'</div>' +
+				'</div>' +
+			'</div>' +
+		'</nav>',
     controller: function MenuController() {}
 });
 
