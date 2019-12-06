@@ -21,7 +21,7 @@ main.component("menu", {
 });
 
 main.component("footer", {
-    template:  "No sponsors :<br />" +
+    template:  "Nos sponsors :<br />" +
     "<a href=\"http://disc.univ-fcomte.fr/\"><img src=\"http://sciences.univ-fcomte.fr/download/ufr-st/image/laboratoires/femto-st.jpg\" alt=\"DISC\"/></a>" +
     "<a href=\"http://www.univ-fcomte.fr/\"><img src=\"https://upload.wikimedia.org/wikipedia/fr/thumb/e/e2/Universit%C3%A9_de_Franche-Comt%C3%A9_%28logo%29.svg/619px-Universit%C3%A9_de_Franche-Comt%C3%A9_%28logo%29.svg.png\" alt=\"UFC\"/></a>" +
     "<a href=\"http://www.jet1oeil.com/\"><img src=\"http://www.jet1oeil.com/wp-content/uploads/2011/09/logo.png\" alt=\"jet1oeil\"/></a>"+
