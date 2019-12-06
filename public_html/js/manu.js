@@ -17,7 +17,9 @@ function getCitations(nb){
                 'Dans la vie il y a ceux qui travaillent et ceux qui ne sont rien !',
                 'Draguez vos profs ! ',
                 'On met un pognon de dingue dans des minima sociaux, les gens sont quand même pauvres !',
-                'Qui serions nous pour dire à quelqu\'un qui souhaite travailler plus que c\'est impossible'
+                'Qui serions nous pour dire à quelqu\'un qui souhaite travailler plus que c\'est impossible',
+                'Je suis gilet jaune',
+                'J\'ai toujours assumé la dimension de verticalité, de transcendance, mais en même temps elle doit s\'ancrer dans de l\'immanence complète, de la matérialité'
             ];
     } else if (nb == 3){
         return ['Rendre autonome les universités, c\'est faire confiance au monde enseignant',
