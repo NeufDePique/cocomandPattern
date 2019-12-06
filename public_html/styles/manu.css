@@ -29,7 +29,7 @@ table{
 }
 
 td{
-    witdh: 25%;
+    width: 25%;
 }
 
 #imgPres{
@@ -43,4 +43,23 @@ td{
 
 #voirConseil{
     margin-bottom: 10px;
+}
+
+p, input, h2 {
+    text-align: center;
+}
+
+input[type=Button] {
+    margin: 0 25%;
+    width: 50%;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+ul > li {
+    margin-left: 4%;
+    margin-top: 2%;
+    font-size: large;
 }
